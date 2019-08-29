@@ -1,0 +1,170 @@
+
+/* ####### global ######"*/
+
+* {
+   box-sizing: border-box;
+}
+
+body {
+   font-family: 'Roboto', sans-serif;
+   font-weight: 400;
+   color: white;
+}
+
+h1, h2, h3 {
+   font-weight: inherit;
+   font-size: 2rem;
+}
+
+a {
+   text-decoration: none;
+}
+
+figure {
+   margin: 0;
+}
+
+button {
+   background: none;
+   border: none;
+   cursor: pointer;
+}
+
+button, a{
+   color: inherit;
+}
+
+/* # chat-box #*/
+
+.chat-box {
+   width: 62px;
+   height: 63px;
+   background-image: url("../assets/img/chat-box.png");
+
+   position: fixed;
+   bottom: 1rem;
+   right: 1rem;
+}
+
+/* ### navigation ### */
+
+.navigation__link {
+   margin: 0 .5rem;
+}
+
+.navigation__link:hover {
+   color: #e99002;
+}
+
+/* ### log-in ### */
+
+.log-in::before {
+   content: "\f007";
+   display: inline-block;
+   font-family: "Font Awesome 5 Free"; 
+   font-weight: 900;
+   margin-right: .5rem;
+}
+
+/* ####### hero #######*/
+
+.hero__img, .hero__content {
+   width: 33%;
+}
+
+.hero__img {
+   display: flex;
+   align-items: center;
+}
+
+.hero__content {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+}
+
+/* ####### main #######*/
+
+.section-title {
+   color: #222222;
+   text-align: center;
+}
+
+.section-title--grey {
+   color: grey;
+}
+   /* ### benefits ###*/
+   .benefits__item {
+      width: 50%;
+      padding: 1rem;
+   }
+
+   .benefits__item-title {
+      margin-bottom: .5rem;
+   }
+
+   .benefits__item-title::before {
+      content: '\f105';
+      display: inline-block;
+      font-family: "Font Awesome 5 Free"; 
+      font-weight: 900;
+      margin-right: .5rem;
+   }
+
+   .benefits__paragraphe {
+      color: lightgray;
+      font-size: 1.2rem;
+   }
+
+   /* ### partner ###*/
+   .partner__list {
+      width: 100%;
+      padding: 0 10rem;
+
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: center; 
+   }
+
+   .partner__item {
+      display: flex;
+      justify-content: center;
+   }
+
+   .partner__item--featurd {
+      width: 100%;
+      margin-top: 3rem;
+   }
+
+   /* ### call-to-action ###*/
+
+   .call-to-action {
+      margin-bottom: 5rem;
+   }
+
+/* ####### footer ######"*/
+
+.footer {
+   background-color: #222222;
+   display: flex;
+   justify-content: space-between;
+   padding: 1rem;
+}
+
+.footer__nav-link::before {
+   content: "";
+   display: inline-block;
+   height: 100%;
+   width: 1px;
+
+   border-left: 1px dotted #fff;
+   margin: 0 .8rem;
+   margin-bottom: -.2rem;
+}
+
+.footer__nav-link:first-child::before {
+   display: none;
+}

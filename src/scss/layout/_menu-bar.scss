@@ -1,0 +1,17 @@
+
+/* ####### menu bar #######*/
+
+.menu-bar {
+   background-color: #333333;
+}
+
+.menu-bar .wrapper {
+   align-items: center;
+   justify-content: space-between;
+   padding: 0 1rem;
+}
+
+.menu-bar__left-side {
+   display: flex;
+   align-items: center;
+}
