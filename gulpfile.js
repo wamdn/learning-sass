@@ -3,9 +3,9 @@ const sass = require('gulp-sass');
 const browserSync = require('browser-sync').create();
 
 function style() {
-   return gulp.src('./src/scss/**/*.{scss,sass}')
+   return gulp.src('./src/scss/**/*.{scss,sass}', {sourcemaps: true})
       .pipe(sass().on('error', sass.logError))
-      .pipe(gulp.dest('./dist/css/'))
+      .pipe(gulp.dest('./dist/css/'), {sourcemaps: '.'})
       .pipe(browserSync.stream());
 }
 
