@@ -30,5 +30,5 @@ module.exports = {
    style,
    html,
    watch,
-   default: gulp.series(style, html, watch)
+   default: gulp.series( gulp.parallel(style, html), watch)
 }

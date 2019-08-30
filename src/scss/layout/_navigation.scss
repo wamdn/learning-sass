@@ -1,0 +1,34 @@
+/* ####### menu bar #######*/
+
+.menu-bar {
+   background-color: $dark-grey;
+
+   &__left-side {
+      display: flex;
+      align-items: center;
+   }
+
+   .wrapper {
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 1rem;
+   }
+   
+}
+
+/* ### navigation ### */
+
+.navigation__link {
+   margin: 0 .5rem;
+   &:hover {
+      color: $orange;
+   }  
+}
+
+/* ### log-in ### */
+
+.log-in::before {
+   content: "\f007";
+   @extend %font-awesome-free;
+   margin-right: .5rem;
+}

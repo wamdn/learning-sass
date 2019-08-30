@@ -1,0 +1,23 @@
+/* ### footer ###"*/
+
+.footer {
+   background-color: $darker-grey;
+   display: flex;
+   justify-content: space-between;
+   padding: 1rem;
+
+   &__nav-link::before {
+      content: "";
+      display: inline-block;
+      height: 100%;
+      width: 1px;
+   
+      border-left: 1px dotted #fff;
+      margin: 0 .8rem;
+      margin-bottom: -.2rem;
+   }
+
+   &__nav-link:first-child::before {
+      display: none;
+   }
+}

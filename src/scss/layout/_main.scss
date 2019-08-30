@@ -1,0 +1,61 @@
+/* ####### main #######*/
+
+.section-title {
+   color: $darker-grey;
+   text-align: center;
+
+   &--grey {
+      color: grey;
+   }
+}
+   /* ### benefits ###*/
+   .benefits {
+      &__item {
+         width: 50%;
+         padding: 1rem;
+      }
+
+      &__item-title {
+         margin-bottom: .5rem;
+   
+         &::before {
+            content: '\f105';
+            @extend %font-awesome-free;
+            margin-right: .5rem;
+         }
+      }
+
+      &__paragraphe {
+         color: lightgray;
+         font-size: 1.2rem;
+      }
+   }
+
+   /* ### partner ###*/
+   .partner {
+      &__list {
+         width: 100%;
+         padding: 0 10rem;
+   
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: space-around;
+         align-items: center; 
+      }
+
+      &__item {
+         display: flex;
+         justify-content: center;
+      }
+
+      &__item--featurd {
+         width: 100%;
+         margin-top: 3rem;
+      }
+   }
+
+   /* ### call-to-action ###*/
+
+   .call-to-action {
+      margin-bottom: 5rem;
+   }

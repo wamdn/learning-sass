@@ -1,9 +1,8 @@
-
 /* # btn # */
 
 .btn {
    padding: 1em;
-   background-color: #e99002;
+   background-color: $orange;
    display: inline-block;
 
    font-size: 1.5rem;
@@ -11,8 +10,8 @@
    border: 2px solid #fff;
 
    min-width: 15rem;
-}
 
-.btn--blue {
-   background-color: #165882;
+   &--blue {
+      background-color: $dark-blue;
+   }
 }
